@@ -35,7 +35,7 @@ body {
 table {
     min-width: 600px;
     width: 90%;
-    background-color: #E8EEF2;
+    background-color: #e8f2ed;
     border-radius: 10px;
     border-collapse: collapse;
     text-align: left;
@@ -43,13 +43,14 @@ table {
 }
 
 thead {
-    background-color: #C7D3DD;
+    background-color: #005F60;
+    color: whitesmoke;
 }
 
 th,
 td {
     padding: 1em;
-    border-bottom: 2px solid #C7D3DD;
+    border-bottom: 2px solid #00818362;
     vertical-align: top;
 }
 
@@ -59,6 +60,7 @@ td {
 
 .time-date-col {
     width: 20%;
+    min-width: 250px;
 }
 
 button {
@@ -84,11 +86,11 @@ table button {
 }
 
 button:hover {
-    background-color: rgb(7, 66, 7);
+    background-color: rgb(88, 35, 0);
 }
 
 .selected {
-    background-color: #77B6EA;
+    background-color: #249EA0;
 }
 
 .selected button {
@@ -121,12 +123,37 @@ p {
     padding: 0;
 }
 
+h4 {
+    margin: 0.25em 0 0;
+}
+
 .stop-background-color {
     background-color: rgba(192, 33, 33, 0.15)
 }
 
 .start-background-color {
     background-color: rgba(24, 214, 24, 0.15);
+}
+
+header {
+    display: flex;
+    gap: 1em;
+    align-items: baseline;
+}
+
+header img {
+    margin-top: 1em;
+    width: 100px;
+    height: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    background: -webkit-linear-gradient(#ff6600, #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /** MEDIA QUERIES **/

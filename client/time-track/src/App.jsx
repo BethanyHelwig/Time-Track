@@ -7,7 +7,9 @@ function App() {
 
     return (
         <>
-            <h1>Time Track</h1>
+            <header>
+                <h1>Time Track</h1><img src="./src/assets/track_icon.png"></img>
+            </header>
             <Table />
         </>
     )
