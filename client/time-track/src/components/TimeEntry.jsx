@@ -11,7 +11,7 @@ export default function TimeEntry() {
     const timeDateList = timeDateArray.map(el => (
         <p className={el.type == "start" ? "start-background-color" : "stop-background-color"}>
             <span style={{color: el.type == "start" ? "green" : "rgb(192, 33, 33)"}}>
-                {el.type == "start" ? <i className="fa-solid fa-play fa-shake"></i> : <i className="fa-solid fa-stop"></i>}
+                {el.type == "start" ? <i className="fa-solid fa-play"></i> : <i className="fa-solid fa-stop"></i>}
             </span> 
             {el.date}
         </p>
@@ -52,7 +52,7 @@ export default function TimeEntry() {
     return(
         <tr className={isSelected ? 'selected' : ''}>
             <td>
-                <button onClick={handleClick}>{!isSelected ? <i className="fa-solid fa-play fa-shake"></i> : <i className="fa-solid fa-stop"></i>}</button>
+                <button onClick={handleClick}>{!isSelected ? <i className="fa-solid fa-play"></i> : <i className="fa-solid fa-stop"></i>}</button>
                 <h4>Total: {totalTime}</h4>
             </td>
             <td>{timeDateList}</td>
